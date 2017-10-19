@@ -1,0 +1,28 @@
+{
+  "name": "ng2-boaster",
+  "version": "0.1.0",
+  "description": "An Angular.io Notification Module (with Bootstrap 4)",
+  "main": "bundles/boaster.umd.js",
+  "module": "index.js",
+  "typings": "index.d.ts",
+  "keywords": [
+    "angular",
+    "angular2",
+    "angular 2",
+    "angular4"
+  ],
+  "author": "Marc Ernst",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Skyl0/ng2-boaster.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Skyl0/ng2-boaster/issues"
+  },
+  "homepage": "https://github.com/Skyl0/ng2-boaster#readme",
+  "peerDependencies": {
+    "@angular/core": "^2.4.0 || ^4.0.0",
+    "rxjs": "^5.0.1"
+  }
+}
