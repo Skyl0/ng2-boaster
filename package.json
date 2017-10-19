@@ -1,0 +1,24 @@
+{
+  "name": "ng2-boaster",
+  "version": "0.0.1",
+  "description": "A Angular.io Notification Module (with Bootstrap 4)",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Skyl0/ng2-boaster.git"
+  },
+  "keywords": [
+    "angular",
+    "notifications",
+    "bootstrap4"
+  ],
+  "author": "Marc Ernst",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Skyl0/ng2-boaster/issues"
+  },
+  "homepage": "https://github.com/Skyl0/ng2-boaster#readme"
+}
