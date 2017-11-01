@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { ToastMsg } from '../model/toast-msg';
 import { ToastConfig } from '../model/toast-config';
-var BoasterService = /** @class */ (function () {
+var BoasterService = (function () {
     function BoasterService() {
         /**
          * This is the Core of the Toasts, managing the currently shown Toasts and providing methods for other components
@@ -70,12 +70,12 @@ var BoasterService = /** @class */ (function () {
     BoasterService.prototype.wait = function (time) {
         return new Promise(function (resolve) { return setTimeout(resolve, time); });
     };
-    BoasterService.decorators = [
-        { type: Injectable },
-    ];
-    /** @nocollapse */
-    BoasterService.ctorParameters = function () { return []; };
     return BoasterService;
 }());
 export { BoasterService };
+BoasterService.decorators = [
+    { type: Injectable },
+];
+/** @nocollapse */
+BoasterService.ctorParameters = function () { return []; };
 //# sourceMappingURL=boaster.service.js.map

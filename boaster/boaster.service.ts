@@ -1,13 +1,12 @@
 import {Injectable} from '@angular/core';
 import {ToastMsg} from '../model/toast-msg';
 import {ToastConfig} from '../model/toast-config';
-import {Promise} from 'rxjs';
 
 declare var Notification: any;
 declare var document: any;
 
 @Injectable()
-export class BoastrService {
+export class BoasterService {
 
     /**
      * This is the Core of the Toasts, managing the currently shown Toasts and providing methods for other components
@@ -28,19 +27,6 @@ export class BoastrService {
         // not the focus in the browser (e.g. User browsing in another Tab)
         this.config = new ToastConfig('top', 'right', true);
 
-        // Check if Browser supports Notifications
-        if (!('Notification' in window)) {
-            alert('This browser does not support system notifications');
-        } else if (Notification.permission === 'granted') {
-            this.notificationsAllowed = true;
-        } else if (Notification.permission !== 'denied') {
-            // If User haven't been asked for Permission yet, request it
-            Notification.requestPermission(function (permission) {
-                if (permission === 'granted') {
-                    this.notificationsAllowed = true;
-                }
-            });
-        }
     }
 
     showToast(text: string, type: string, userMustDismiss: boolean): void {
@@ -67,7 +53,7 @@ export class BoastrService {
         return this.messages;
     }
 
-    private spawnNotification(body, icon, title): void {
+    private spawnNotification(body: string, icon: string, title: string): void {
         // WebAPI Notifications
         let options = {
             body: body,

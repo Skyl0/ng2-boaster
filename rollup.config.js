@@ -1,9 +1,11 @@
 export default {
-  entry: 'dist/index.js',
-  dest: 'dist/bundles/boaster.umd.js',
+  input: 'dist/index.js',
+  file: 'dist/bundles/boaster.umd.js',
   sourceMap: false,
-  format: 'umd',
-  moduleName: 'ng2-boaster',
+  output:  {
+    format: 'umd'
+  },
+  name: 'ng2-boaster',
   globals: {
     '@angular/core': 'ng.core',
     'rxjs/Observable': 'Rx',

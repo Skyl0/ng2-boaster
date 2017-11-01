@@ -1,6 +1,6 @@
 {
   "name": "ng2-boaster",
-  "version": "0.1.0",
+  "version": "0.1.7",
   "description": "An Angular.io Notification Module (with Bootstrap 4)",
   "main": "bundles/boaster.umd.js",
   "module": "index.js",

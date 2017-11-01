@@ -1,4 +1,4 @@
-var ToastMsg = /** @class */ (function () {
+var ToastMsg = (function () {
     function ToastMsg(msg, msgType, userMustDismiss, imageUrl) {
         this.msg = msg;
         this.msgType = msgType;
